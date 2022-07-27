@@ -1,0 +1,74 @@
+body{
+    background-color: #fff;
+}
+
+
+h1{
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+}
+h4{
+    color: #fff;
+    text-align: center;
+}
+.titulo{
+    margin-bottom: 5%;
+}
+input{
+    border: none;
+    width: 48%;
+    height: 50%;
+    background-color: rgb(218, 238, 36);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 30px;
+
+}
+
+div{
+    margin-top: 50px;
+    height: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+tr,td,span{
+    text-align: center;
+    font-size: 30px;
+    border: 2px solid black;
+    width: 25%;
+    height: 100px;
+    background-color: tomato;
+    border-radius: 30px;
+}
+table{
+    border: 2px solid black;
+    width: 1000px;
+    height: 100px;
+    background-color: tomato;
+    border-radius: 30px;
+}
+button{
+    border: none;
+    border-radius: 10px;
+    background-color: yellowgreen;
+    font-size: 30px;
+}
+#rectangular,#calcular{
+    margin-left:40% ;
+}
+#reset{
+    background-color: yellow;
+    margin-left: 42%;
+}
+#polar,#potencia{
+    margin-left: 35%;
+}
+
+label{
+    color: #fff;
+    font-size: 30px;
+}
+article{
+    margin-top: 100px;
+}
