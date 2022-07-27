@@ -1,9 +1,20 @@
 
-
-
-var pollo=[2,3,4];
-var aguacate=[3,2,1];
-var pan=[3,3,2];
+var pescado=[18,1,15];
+var pollo=[23,0,3];
+var huevo=[13,1,11];
+var pavo=[29,0,8];
+var yogurt=[3,13,3];
+//----------------------proteina----arriba----
+var pan=[7,56,1];
+var arroz=[6,86,0];
+var fruta=[2,9,15];
+var pasta=[13,75,2];
+var vegetales=[1,7,0];
+//--------------carboidratos-----arriba----
+var aguacate=[2,9,15];
+var salmon=[21,0,6];
+var atun=[28,0,9];
+//---------------grasas----------arriba
 var alimento1;
 var alimento2;
 var alimento3;
@@ -12,9 +23,22 @@ var choose;
 // var operacion;
 // var fondo;
 
+document.getElementById("pescado").addEventListener("click",pescadito);
 document.getElementById("pollo").addEventListener("click",pollito);
-document.getElementById("aguacate").addEventListener("click",aguacatito);
+document.getElementById("huevo").addEventListener("click",huevito);
+document.getElementById("pavo").addEventListener("click",pavito);
+document.getElementById("yogurt").addEventListener("click",yogursito);
+
 document.getElementById("pan").addEventListener("click",panesito);
+document.getElementById("arroz").addEventListener("click",arrosito);
+document.getElementById("fruta").addEventListener("click",frutita);
+document.getElementById("pasta").addEventListener("click",pastita);
+document.getElementById("vegetales").addEventListener("click",vegetalitos);
+
+document.getElementById("aguacate").addEventListener("click",aguacatito);
+document.getElementById("salmon").addEventListener("click",salmonsito);
+document.getElementById("atun").addEventListener("click",atunsito);
+
 document.getElementById("calcular2").addEventListener("click",calcular2);
 document.getElementById("opcion1").addEventListener("click",choose1);
 document.getElementById("opcion2").addEventListener("click",choose2);
@@ -30,36 +54,151 @@ function choose2(e){
     choose=0;
     e.preventDefault();
 }
+//------------------------------------------------*********************************************
+function pescadito(e){
+    document.getElementById("pescado").style.background = "red";
+    document.getElementById("pollo").style.background = "yellowgreen";
+    document.getElementById("huevo").style.background = "yellowgreen";
+    document.getElementById("pavo").style.background = "yellowgreen";
+    document.getElementById("yogurt").style.background = "yellowgreen";
 
+    alimento1=pescado;
+    pruebaresultado1.textContent = "pescado";
+    e.preventDefault();
+}
 function pollito(e){
+    document.getElementById("pescado").style.background = "yellowgreen";
     document.getElementById("pollo").style.background = "red";
-    document.getElementById("aguacate").style.background = "yellowgreen";
-    document.getElementById("pan").style.background = "yellowgreen";
+    document.getElementById("huevo").style.background = "yellowgreen";
+    document.getElementById("pavo").style.background = "yellowgreen";
+    document.getElementById("yogurt").style.background = "yellowgreen";
+
     alimento1=pollo;
     pruebaresultado1.textContent = "pollo";
     e.preventDefault();
 }
-function aguacatito(e){
-    document.getElementById("aguacate").style.background = "red";
-    document.getElementById("pollo").style.background = "yellowgreen";
-    document.getElementById("pan").style.background = "yellowgreen";
-    alimento2=aguacate;
-    pruebaresultado2.textContent = "aguacate";
-
+function huevito(e){
+    document.getElementById("pescado").style.background = "yellowgreen";
+    document.getElementById("pollo").style.background =  "yellowgreen";
+    document.getElementById("huevo").style.background =  "red";
+    document.getElementById("pavo").style.background = "yellowgreen";
+    document.getElementById("yogurt").style.background = "yellowgreen";
+    alimento1=huevo;
+    pruebaresultado1.textContent = "huevo";
     e.preventDefault();
 }
+function pavito(e){
+    document.getElementById("pescado").style.background = "yellowgreen";
+    document.getElementById("pollo").style.background =  "yellowgreen";
+    document.getElementById("huevo").style.background =  "yellowgreen";
+    document.getElementById("pavo").style.background = "red";
+    document.getElementById("yogurt").style.background = "yellowgreen";
+    alimento1=pavo;
+    pruebaresultado1.textContent = "pavo";
+    e.preventDefault();
+}
+function yogursito(e){
+    document.getElementById("pescado").style.background = "yellowgreen";
+    document.getElementById("pollo").style.background =  "yellowgreen";
+    document.getElementById("huevo").style.background =  "yellowgreen";
+    document.getElementById("pavo").style.background = "yellowgreen";
+    document.getElementById("yogurt").style.background =  "red";
+    alimento1=yogurt;
+    pruebaresultado1.textContent = "yogurt";
+    e.preventDefault();
+}
+//------------------------------------------------*********************************************
+
 function panesito(e){
     document.getElementById("pan").style.background = "red";
-    document.getElementById("aguacate").style.background = "yellowgreen";
-    document.getElementById("pollo").style.background = "yellowgreen";
-    alimento3=pan;
-    pruebaresultado3.textContent = "pan";
+    document.getElementById("arroz").style.background = "yellowgreen";
+    document.getElementById("fruta").style.background = "yellowgreen";
+    document.getElementById("pasta").style.background = "yellowgreen";
+    document.getElementById("vegetales").style.background = "yellowgreen";
+    alimento2=pan;
+    pruebaresultado2.textContent = "pan";
 
     e.preventDefault();
 }
+function arrosito(e){
+    document.getElementById("pan").style.background = "yellowgreen";
+    document.getElementById("arroz").style.background = "red";
+    document.getElementById("fruta").style.background = "yellowgreen";
+    document.getElementById("pasta").style.background = "yellowgreen";
+    document.getElementById("vegetales").style.background = "yellowgreen";
+    alimento2=arroz;
+    pruebaresultado2.textContent = "arroz";
+
+    e.preventDefault();
+}
+function frutita(e){
+    document.getElementById("pan").style.background = "yellowgreen";
+    document.getElementById("arroz").style.background = "yellowgreen";
+    document.getElementById("fruta").style.background = "red";
+    document.getElementById("pasta").style.background = "yellowgreen";
+    document.getElementById("vegetales").style.background = "yellowgreen";
+    alimento2=fruta;
+    pruebaresultado2.textContent = "fruta";
+
+    e.preventDefault();
+}
+function pastita(e){
+    document.getElementById("pan").style.background ="yellowgreen" ;
+    document.getElementById("arroz").style.background = "yellowgreen";
+    document.getElementById("fruta").style.background = "yellowgreen";
+    document.getElementById("pasta").style.background = "red";
+    document.getElementById("vegetales").style.background = "yellowgreen";
+    alimento2=pasta;
+    pruebaresultado2.textContent = "pasta";
+
+    e.preventDefault();
+}
+function vegetalitos(e){
+    document.getElementById("pan").style.background = "yellowgreen";
+    document.getElementById("arroz").style.background = "yellowgreen";
+    document.getElementById("fruta").style.background = "yellowgreen";
+    document.getElementById("pasta").style.background = "yellowgreen";
+    document.getElementById("vegetales").style.background = "red";
+    alimento2=vegetales;
+    pruebaresultado2.textContent = "vegetales";
+
+    e.preventDefault();
+}
+//------------------------------------------------*********************************************
+function aguacatito(e){
+    document.getElementById("aguacate").style.background = "red";
+    document.getElementById("salmon").style.background = "yellowgreen";
+    document.getElementById("atun").style.background = "yellowgreen";
+
+    alimento3=aguacate;
+    pruebaresultado3.textContent = "aguacate";
+
+    e.preventDefault();
+}
+function salmonsito(e){
+    document.getElementById("aguacate").style.background = "yellowgreen";
+    document.getElementById("salmon").style.background = "red";
+    document.getElementById("atun").style.background = "yellowgreen";
+
+    alimento3=salmon;
+    pruebaresultado3.textContent = "salmon";
+
+    e.preventDefault();
+}
+function atunsito(e){
+    document.getElementById("aguacate").style.background = "yellowgreen";
+    document.getElementById("salmon").style.background = "yellowgreen";
+    document.getElementById("atun").style.background = "red";
+
+    alimento3=atun;
+    pruebaresultado3.textContent = "atun";
+
+    e.preventDefault();
+}
+//------------------------------------------------*********************************************
 function calcular2(){
     
-
+    document.getElementById("calcular2").style.background = "red";
     var proteina = document.getElementById('proteina').value;
     var carbohidratos = document.getElementById('carbohidratos').value;
     var grasa = document.getElementById('grasa').value;
@@ -125,14 +264,24 @@ function calcular2(){
 // document.getElementById("polar").addEventListener("click",polar);
 // document.getElementById("exponencial").addEventListener("click",exponencial);
 
-// document.getElementById("reset").addEventListener("click",reset);
+document.getElementById("reset").addEventListener("click",reset);
 
-// function reset(e){
-//     document.getElementById("calcular").style.background = "yellowgreen";
-//     abajo.textContent="";
-//     final.textContent="";
-//     e.preventDefault();
-// }
+function reset(e){
+    document.getElementById("calcular2").style.background = "yellowgreen";
+    pruebaresultado1.textContent="";
+    pruebaresultado2.textContent="";
+    pruebaresultado3.textContent="";
+
+    porcionr1.textContent="";
+    porcionr2.textContent="";
+    porcionr3.textContent="";
+
+    GR1.textContent="";
+    GR2.textContent="";
+    GR3.textContent="";
+
+    e.preventDefault();
+}
 
 // function rectangular(e){
 //     document.getElementById("rectangular").style.background = "red";
