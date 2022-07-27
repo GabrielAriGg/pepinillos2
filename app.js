@@ -244,13 +244,18 @@ function calcular2(){
     porcion1=(determinante1/determinanteA);
     porcion2=(determinante2/determinanteA);
     porcion3=(determinante3/determinanteA);
-    porcionGR1=porcion1*100;
-    porcionGR2=porcion2*100;
-    porcionGR3=porcion3*100;    
 
-    porcionr1.textContent=porcion1+" porciones";
-    porcionr2.textContent=porcion2+" porciones";
-    porcionr3.textContent=porcion3+" porciones";
+    por1=porcion1.toFixed(2);
+    por2=porcion2.toFixed(2);
+    por3=porcion3.toFixed(2);
+
+    porcionGR1=por1*100;
+    porcionGR2=por2*100;
+    porcionGR3=por3*100;    
+
+    porcionr1.textContent=por1+" porciones";
+    porcionr2.textContent=por2+" porciones";
+    porcionr3.textContent=por3+" porciones";
     GR1.textContent=porcionGR1+" gr";
     GR2.textContent=porcionGR2+" gr";
     GR3.textContent=porcionGR3+" gr";
